@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Viewer</title>
+    <script type="module">
+        import '@google/model-viewer';
+    </script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        model-viewer {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <model-viewer
+        src="Duck.glb" 
+        alt="3D model"
+        auto-rotate
+        camera-controls
+        background-color="#FFFFFF">
+    </model-viewer>
+</body>
+</html>
